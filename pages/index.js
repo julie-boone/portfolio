@@ -7,6 +7,10 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const introduction = `I'm a junior developer based in Ghent, about to graduate from Syntra
+  as frontend developer, but with a broad interest in all development
+  processes. I'm a quick learner and I'm not afraid to take on new
+  challenges.`;
   return (
     <>
       <Head>
@@ -28,12 +32,7 @@ export default function Home() {
         <h1>Julie Boone</h1>
         <h2>Junior Frontend Developer</h2>
         <div className={styles.card}>
-          <p>
-            I'm a junior developer based in Ghent, about to graduate from Syntra
-            as frontend developer, but with a broad interest in all development
-            processes. I'm a quick learner and I'm not afraid to take on new
-            challenges.
-          </p>
+          <p>{introduction}</p>
         </div>
 
         <div className={styles.grid}>
