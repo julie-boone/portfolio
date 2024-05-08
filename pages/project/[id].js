@@ -5,9 +5,9 @@ import react from "react";
 export default function Project({ project }) {
   return (
     <>
-      <h1>{project.name}</h1>
+      <h1>{project?.name}</h1>
       <ul>
-        {project.technologies.map((technology, i) => (
+        {project?.technologies.map((technology, i) => (
           <li key={i}>{technology}</li>
         ))}
       </ul>
